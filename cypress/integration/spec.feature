@@ -5,4 +5,4 @@ Feature: spec
 
   Scenario: Opening google page
     When I open google page
-    Then I see "Google" in the title
+    Then I see "My Store" in the title
