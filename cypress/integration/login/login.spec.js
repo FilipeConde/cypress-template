@@ -1,3 +1,5 @@
+/// <reference types="cypress"/>
+
 import { When, Then } from 'cypress-cucumber-preprocessor/steps';
 
 When('logar com usuário {string} e senha {string}', (user, password) => {

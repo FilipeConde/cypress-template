@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('realizaLoginPadrao', () => {
+  cy.visit('/');
+  cy.get('[data-test="username"]').type('standard_user');
+  cy.get('[data-test="password"]').type('secret_sauce');
+  cy.get('#login-button').click();
+});
