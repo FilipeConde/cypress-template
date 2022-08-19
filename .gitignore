@@ -1,1 +1,5 @@
 /node_modules
+
+# Pastas geradas pelo reporter
+*/cucumber-json
+*/reports
