@@ -31,3 +31,7 @@ Cypress.Commands.add('realizaLoginPadrao', () => {
   cy.get(elements.passwordField).type('secret_sauce');
   cy.get(elements.loginBtn).click();
 });
+
+Cypress.Commands.add('validateQty', (locator, qty) => {
+  cy.get(locator).should('have.text', qty);
+});
